@@ -1,0 +1,19 @@
+{
+  "name": "tv_show_tracker",
+  "version": "1.0.0",
+  "description": "Tracks tv shows you like",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Deepanshu Rana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-tvdb": "^4.1.0",
+    "path": "^0.12.7",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}

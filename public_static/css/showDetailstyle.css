@@ -1,0 +1,195 @@
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1025px) {
+    #show-image img{
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        border: 3px solid white;
+        width: 15%;
+        height: auto;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 1024px) {
+    #show-image img{
+        border-radius: 20px;
+        position: absolute;
+        top: 60%;
+        left: 2%;
+        border: 3px solid white;
+        width: 15%;
+        height: auto;
+        transition: 0.5s;
+    }
+}
+
+#show-image img:hover{
+    transition: 0.5s;
+    box-shadow: 14px 17px 26px 5px rgba(0,0,0,0.75);
+    width: 16%;
+    height: auto;
+}
+
+#bgbg {
+    background-image: url("../Images/doublebg.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: scroll;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    z-index: -3;
+    width: 100%;
+    height: 80vh;
+    filter: blur(2px);
+}
+
+#background-dark{
+    position: absolute;
+    top: 70vh;
+    z-index: -1;
+    width: 100%;
+    height: 10vh;
+    background: -webkit-radial-gradient(center,circle cover,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.4) 100%);
+}
+
+#show-info{
+    position: relative;
+    color: black;
+    top: 69vh;
+    left: 16%;
+}
+
+#show-name #name {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 8vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+#stars{
+    position: relative;
+    top: -.5em;
+    margin-left: 10%;
+}
+
+#show-name span span{
+    font-size: 3vh;
+}
+
+.checked {
+    color: orange;
+}
+
+.unchecked{
+    color: white;
+}
+
+#show-summ {
+    width: 65%;
+    font-size: 2.2vh;
+}
+
+.card{
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    z-index: 2;
+    line-height: 2.2em;
+    border-radius: 20px;
+    box-shadow: 14px 17px 26px 5px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    width: 30%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.card:hover{
+    box-shadow: 0px 7px 24px 1px rgba(0,0,0,0.75);
+    transition:0.5s;
+}
+
+.card-header h2{
+    font-weight: bolder;
+    color: white;
+}
+
+.h4{
+    font-weight: bolder;
+    /*color: black;*/
+    color: white;
+
+}
+
+.card-text{
+    color: white;
+
+}
+
+#show-episodes{
+    position: relative;
+    top:70vh;
+    left: 16%;
+    color: black;
+    width: 60%;
+}
+
+#show-cast{
+    position: relative;
+    top: 70vh;
+    left: 16%;
+    color: black;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.imghvr-flip-horiz{
+    width: 15%;
+    border-radius: 10px;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+figcaption{
+    font-size: .75em;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+#section3{
+    position: relative;
+    top: 70vh;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper{
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    box-shadow: 14px 17px 26px 5px rgba(0,0,0,0.75);
+    border-radius: 60px;
+    font-family: 'Righteous', cursive;
+    font-size: 6vh;
+    color: purple;
+    transition: 0.5s;
+}
+
+.wrapper:hover{
+    box-shadow: none;
+    transition: 0.5s;
+}
