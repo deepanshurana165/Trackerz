@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 9999;
 
 const dataRoute = require(__dirname+'/routes/data');
 const posterRoute =require(__dirname+'/routes/poster');
@@ -13,6 +14,6 @@ app.use('/shows',dataRoute);
 app.use('/shows/hello',posterRoute);
 app.use('/shows/token',tokenRoute);
 
-app.listen(9999,()=>{
+app.listen(PORT,()=>{
     console.log('server has started')
 });
