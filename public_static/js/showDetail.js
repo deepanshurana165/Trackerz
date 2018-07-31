@@ -5,7 +5,7 @@ $(document).ready(()=>{
 
 function getshowdata() {
     let id = sessionStorage.getItem('showid');
-    axios.get(`http://api.tvmaze.com/shows/${id}`)
+    axios.get(`https://api.tvmaze.com/shows/${id}`)
         .then((response)=>{
             console.log(response);
             setBackground(response.data.externals.thetvdb);
@@ -70,7 +70,7 @@ function setDetails(data) {
 
 function getCast(){
     let id = sessionStorage.getItem('showid');
-    axios.get(`http://api.tvmaze.com/shows/${id}/cast`)
+    axios.get(`https://api.tvmaze.com/shows/${id}/cast`)
         .then((response)=>{
             console.log(response);
             setCast(response.data);
@@ -145,7 +145,7 @@ function settingShowSchedule(data) {
 
 function setShowSchedule(id){
     console.log('id is '+id);
-    axios.get(`http://api.tvmaze.com/shows/${id}/episodes`)
+    axios.get(`https://api.tvmaze.com/shows/${id}/episodes`)
         .then((response)=>{
             let data = response.data;
             settingShowSchedule(data);
