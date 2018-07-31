@@ -7,7 +7,7 @@ $(document).ready(()=>{
 });
 
 function getShows(searchQuery) {
-    axios.get(`http://api.tvmaze.com/search/shows?q=${searchQuery}`)
+    axios.get(`https://api.tvmaze.com/search/shows?q=${searchQuery}`)
         .then((response)=>{
             console.log(response);
             let shows = response.data;
