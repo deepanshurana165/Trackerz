@@ -7,9 +7,9 @@ route.use((req,res,next)=>{
     if (!token){
         rp.post({url:'https://api.thetvdb.com/login',
                 json: {
-                    "apikey": "0178C5GV2NTOU4W8",
-                    "userkey": "NW4CBMTDRZR8NUE8",
-                    "username": "deepanshuranahero7jc"}
+                    "apikey": "WP10NQ78SBL4TP1W",
+                    "userkey": "6F2AH1A2X60L70B1",
+                    "username": "jnm45120s6i"}
             },
             function(err,httpResponse,body){
                 if (err) console.log(err);
